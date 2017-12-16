@@ -16,6 +16,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    /** 增量*/
+    NSLog(@"___增量");
     // Do any additional setup after loading the view, typically from a nib.
 }
 
