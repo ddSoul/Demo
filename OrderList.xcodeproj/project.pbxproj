@@ -64,6 +64,7 @@
 		7BBE8E881FE7950300F8D359 /* XLView_OrderHeader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XLView_OrderHeader.m; sourceTree = "<group>"; };
 		7BBE8E8A1FE7951B00F8D359 /* XLView_OrderFooter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XLView_OrderFooter.h; sourceTree = "<group>"; };
 		7BBE8E8B1FE7951B00F8D359 /* XLView_OrderFooter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XLView_OrderFooter.m; sourceTree = "<group>"; };
+		7BBE8E8D1FE797D800F8D359 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		DFCECC4D56763D2065DDDD29 /* Pods-OrderList.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OrderList.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OrderList/Pods-OrderList.debug.xcconfig"; sourceTree = "<group>"; };
 		E52A2001BE8058CFD1421B02 /* Pods-OrderList.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OrderList.release.xcconfig"; path = "Pods/Target Support Files/Pods-OrderList/Pods-OrderList.release.xcconfig"; sourceTree = "<group>"; };
 		E97D387B02D0E1CEFE50ABC3 /* libPods-OrderList.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OrderList.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -126,6 +127,7 @@
 				7B19B0E71FDBAAF800FFFD4D /* Assets.xcassets */,
 				7B19B0EC1FDBAAF800FFFD4D /* Info.plist */,
 				7B19B0ED1FDBAAF800FFFD4D /* main.m */,
+				7BBE8E8D1FE797D800F8D359 /* PrefixHeader.pch */,
 			);
 			path = OrderList;
 			sourceTree = "<group>";
@@ -553,6 +555,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
+				GCC_PREFIX_HEADER = /Users/dengxiliang/Desktop/OrderList/OrderList/PrefixHeader.pch;
 				INFOPLIST_FILE = OrderList/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dxl.OrderList;
@@ -569,6 +572,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
+				GCC_PREFIX_HEADER = /Users/dengxiliang/Desktop/OrderList/OrderList/PrefixHeader.pch;
 				INFOPLIST_FILE = OrderList/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dxl.OrderList;
