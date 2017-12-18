@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "ViewController.h"
+#import "XLController_Orderlist.h"
 
 @interface AppDelegate ()
 
@@ -20,7 +20,7 @@
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
-    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:[ViewController new]];
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:[XLController_Orderlist new]];
     self.window.rootViewController = nav;
     // Override point for customization after application launch.
     return YES;
