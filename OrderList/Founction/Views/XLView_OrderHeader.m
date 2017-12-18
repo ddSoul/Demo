@@ -8,6 +8,13 @@
 
 #import "XLView_OrderHeader.h"
 
+@interface XLView_OrderHeader()
+{
+    UILabel *_orderType;
+    UILabel *_orderStatus;
+}
+@end
+
 @implementation XLView_OrderHeader
 
 - (id)initWithFrame:(CGRect)frame
