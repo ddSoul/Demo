@@ -12,6 +12,10 @@
 
 @property (nonatomic, copy) NSString *creatTime;
 @property (nonatomic, copy) NSString *orderNO;
+@property (nonatomic, copy) NSString *orderType;
+@property (nonatomic, copy) NSString *orderStatus;
 
+@property (nonatomic, assign) XLOrderTypeEnum orderTypeEnum;
+@property (nonatomic, assign) XLOrderStatusEnum orderStatusEnum;
 
 @end

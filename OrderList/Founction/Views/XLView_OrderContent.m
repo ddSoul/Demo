@@ -1,20 +1,20 @@
 //
-//  XLView_OrderFooter.m
+//  XLView_OrderContent.m
 //  OrderList
 //
-//  Created by ddSoul on 2017/12/18.
+//  Created by ddSoul on 2017/12/20.
 //  Copyright © 2017年 dxl. All rights reserved.
 //
 
-#import "XLView_OrderFooter.h"
+#import "XLView_OrderContent.h"
 
-@interface XLView_OrderFooter()
+@interface XLView_OrderContent()
 {
     UIView *_contentView;
 }
 @end
 
-@implementation XLView_OrderFooter
+@implementation XLView_OrderContent
 
 - (id)initWithFrame:(CGRect)frame
 {
@@ -29,7 +29,7 @@
 
 - (void)createControls {
     _contentView = [[UIView alloc] init];
-    _contentView.backgroundColor = [UIColor purpleColor];
+    _contentView.backgroundColor = [UIColor greenColor];
     [self addSubview:_contentView];
     
     [_contentView mas_makeConstraints:^(MASConstraintMaker *make) {

@@ -9,12 +9,20 @@
 #ifndef OrderUtil_h
 #define OrderUtil_h
 
-typedef NS_ENUM(NSInteger,XLOrderStatus){
-    XLOrderStatusUnSubmit = 0,             //未提交
+typedef NS_ENUM(NSInteger,XLOrderStatusEnum){
+    XLOrderStatusUnSubmit = 1,             //未提交
     XLOrderStatusSubmited,
     XLOrderStatusUnPay,
     XLOrderStatusPayed
-}
+};
+
+typedef NS_ENUM(NSInteger,XLOrderTypeEnum){
+    XLOrderTypeOfBusses1 = 1,             //未提交
+    XLOrderTypeOfBusses2,
+    XLOrderTypeOfBusses3
+};
+
+
 
 
 #endif /* OrderUtil_h */

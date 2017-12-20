@@ -10,4 +10,11 @@
 
 @implementation XLModel_BaseOrder
 
+- (XLOrderTypeEnum)orderTypeEnum {
+    return 1;
+}
+- (XLOrderStatusEnum)orderStatusEnum {
+    return 1;
+}
+
 @end

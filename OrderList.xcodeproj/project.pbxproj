@@ -13,6 +13,8 @@
 		7B19B0EE1FDBAAF800FFFD4D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B19B0ED1FDBAAF800FFFD4D /* main.m */; };
 		7B19B0F81FDBAAF900FFFD4D /* OrderListTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B19B0F71FDBAAF900FFFD4D /* OrderListTests.m */; };
 		7B19B1031FDBAAF900FFFD4D /* OrderListUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B19B1021FDBAAF900FFFD4D /* OrderListUITests.m */; };
+		7BA8783F1FE9FFD400F03FF3 /* XLView_OrderContent.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BA8783E1FE9FFD400F03FF3 /* XLView_OrderContent.m */; };
+		7BA878431FEA07C300F03FF3 /* XLViewModel_Order.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BA878421FEA07C300F03FF3 /* XLViewModel_Order.m */; };
 		7BBE8E7C1FE7901900F8D359 /* XLController_Orderlist.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BBE8E7B1FE7901900F8D359 /* XLController_Orderlist.m */; };
 		7BBE8E7F1FE7903400F8D359 /* XLModel_BaseOrder.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BBE8E7E1FE7903400F8D359 /* XLModel_BaseOrder.m */; };
 		7BBE8E821FE7907600F8D359 /* XLView_OrderItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BBE8E811FE7907600F8D359 /* XLView_OrderItem.m */; };
@@ -51,6 +53,11 @@
 		7B19B0FE1FDBAAF900FFFD4D /* OrderListUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OrderListUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B19B1021FDBAAF900FFFD4D /* OrderListUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OrderListUITests.m; sourceTree = "<group>"; };
 		7B19B1041FDBAAF900FFFD4D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7BA8783D1FE9FFD400F03FF3 /* XLView_OrderContent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XLView_OrderContent.h; sourceTree = "<group>"; };
+		7BA8783E1FE9FFD400F03FF3 /* XLView_OrderContent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XLView_OrderContent.m; sourceTree = "<group>"; };
+		7BA878401FEA00E400F03FF3 /* UtilsMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UtilsMacro.h; sourceTree = "<group>"; };
+		7BA878411FEA07C300F03FF3 /* XLViewModel_Order.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XLViewModel_Order.h; sourceTree = "<group>"; };
+		7BA878421FEA07C300F03FF3 /* XLViewModel_Order.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XLViewModel_Order.m; sourceTree = "<group>"; };
 		7BBE8E7A1FE7901900F8D359 /* XLController_Orderlist.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XLController_Orderlist.h; sourceTree = "<group>"; };
 		7BBE8E7B1FE7901900F8D359 /* XLController_Orderlist.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XLController_Orderlist.m; sourceTree = "<group>"; };
 		7BBE8E7D1FE7903400F8D359 /* XLModel_BaseOrder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XLModel_BaseOrder.h; sourceTree = "<group>"; };
@@ -166,6 +173,8 @@
 			children = (
 				7BBE8E7D1FE7903400F8D359 /* XLModel_BaseOrder.h */,
 				7BBE8E7E1FE7903400F8D359 /* XLModel_BaseOrder.m */,
+				7BA878411FEA07C300F03FF3 /* XLViewModel_Order.h */,
+				7BA878421FEA07C300F03FF3 /* XLViewModel_Order.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -174,6 +183,7 @@
 			isa = PBXGroup;
 			children = (
 				7BBE8E831FE793B200F8D359 /* OrderUtil.h */,
+				7BA878401FEA00E400F03FF3 /* UtilsMacro.h */,
 			);
 			path = Others;
 			sourceTree = "<group>";
@@ -198,6 +208,8 @@
 				7BBE8E881FE7950300F8D359 /* XLView_OrderHeader.m */,
 				7BBE8E8A1FE7951B00F8D359 /* XLView_OrderFooter.h */,
 				7BBE8E8B1FE7951B00F8D359 /* XLView_OrderFooter.m */,
+				7BA8783D1FE9FFD400F03FF3 /* XLView_OrderContent.h */,
+				7BA8783E1FE9FFD400F03FF3 /* XLView_OrderContent.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -406,7 +418,9 @@
 				7BBE8E821FE7907600F8D359 /* XLView_OrderItem.m in Sources */,
 				7BBE8E7F1FE7903400F8D359 /* XLModel_BaseOrder.m in Sources */,
 				7BBE8E7C1FE7901900F8D359 /* XLController_Orderlist.m in Sources */,
+				7BA878431FEA07C300F03FF3 /* XLViewModel_Order.m in Sources */,
 				7B19B0E01FDBAAF800FFFD4D /* AppDelegate.m in Sources */,
+				7BA8783F1FE9FFD400F03FF3 /* XLView_OrderContent.m in Sources */,
 				7BBE8E861FE7947F00F8D359 /* XLCell_OrderItem.m in Sources */,
 				7BBE8E891FE7950300F8D359 /* XLView_OrderHeader.m in Sources */,
 			);
