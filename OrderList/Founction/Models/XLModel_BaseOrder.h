@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
+@class XLOrderHelper;
+
 @interface XLModel_BaseOrder : NSObject
 
 @property (nonatomic, copy) NSString *creatTime;
@@ -17,5 +19,7 @@
 
 @property (nonatomic, assign) XLOrderTypeEnum orderTypeEnum;
 @property (nonatomic, assign) XLOrderStatusEnum orderStatusEnum;
+@property (nonatomic, strong) XLOrderHelper *orderHelper;
+
 
 @end

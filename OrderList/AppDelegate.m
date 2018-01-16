@@ -22,7 +22,9 @@
     [self.window makeKeyAndVisible];
     UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:[XLController_Orderlist new]];
     self.window.rootViewController = nav;
-    // Override point for customization after application launch.
+
+    [[GHConsole sharedConsole] startPrintLog];
+    
     return YES;
 }
 

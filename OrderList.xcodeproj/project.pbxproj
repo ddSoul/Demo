@@ -15,6 +15,8 @@
 		7B19B1031FDBAAF900FFFD4D /* OrderListUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B19B1021FDBAAF900FFFD4D /* OrderListUITests.m */; };
 		7BA8783F1FE9FFD400F03FF3 /* XLView_OrderContent.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BA8783E1FE9FFD400F03FF3 /* XLView_OrderContent.m */; };
 		7BA878431FEA07C300F03FF3 /* XLViewModel_Order.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BA878421FEA07C300F03FF3 /* XLViewModel_Order.m */; };
+		7BA878491FEA5A5E00F03FF3 /* XLOrderHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BA878481FEA5A5E00F03FF3 /* XLOrderHelper.m */; };
+		7BA8784E1FEBAD5F00F03FF3 /* GHConsole.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BA8784D1FEBAD5F00F03FF3 /* GHConsole.m */; };
 		7BBE8E7C1FE7901900F8D359 /* XLController_Orderlist.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BBE8E7B1FE7901900F8D359 /* XLController_Orderlist.m */; };
 		7BBE8E7F1FE7903400F8D359 /* XLModel_BaseOrder.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BBE8E7E1FE7903400F8D359 /* XLModel_BaseOrder.m */; };
 		7BBE8E821FE7907600F8D359 /* XLView_OrderItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BBE8E811FE7907600F8D359 /* XLView_OrderItem.m */; };
@@ -58,6 +60,10 @@
 		7BA878401FEA00E400F03FF3 /* UtilsMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UtilsMacro.h; sourceTree = "<group>"; };
 		7BA878411FEA07C300F03FF3 /* XLViewModel_Order.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XLViewModel_Order.h; sourceTree = "<group>"; };
 		7BA878421FEA07C300F03FF3 /* XLViewModel_Order.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XLViewModel_Order.m; sourceTree = "<group>"; };
+		7BA878471FEA5A5E00F03FF3 /* XLOrderHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XLOrderHelper.h; sourceTree = "<group>"; };
+		7BA878481FEA5A5E00F03FF3 /* XLOrderHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XLOrderHelper.m; sourceTree = "<group>"; };
+		7BA8784C1FEBAD5F00F03FF3 /* GHConsole.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHConsole.h; sourceTree = "<group>"; };
+		7BA8784D1FEBAD5F00F03FF3 /* GHConsole.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHConsole.m; sourceTree = "<group>"; };
 		7BBE8E7A1FE7901900F8D359 /* XLController_Orderlist.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XLController_Orderlist.h; sourceTree = "<group>"; };
 		7BBE8E7B1FE7901900F8D359 /* XLController_Orderlist.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XLController_Orderlist.m; sourceTree = "<group>"; };
 		7BBE8E7D1FE7903400F8D359 /* XLModel_BaseOrder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XLModel_BaseOrder.h; sourceTree = "<group>"; };
@@ -128,6 +134,7 @@
 		7B19B0DD1FDBAAF800FFFD4D /* OrderList */ = {
 			isa = PBXGroup;
 			children = (
+				7BA8784A1FEBAD5F00F03FF3 /* Utils */,
 				7BBE8E751FE78FE800F8D359 /* Founction */,
 				7B19B0DE1FDBAAF800FFFD4D /* AppDelegate.h */,
 				7B19B0DF1FDBAAF800FFFD4D /* AppDelegate.m */,
@@ -157,6 +164,23 @@
 			path = OrderListUITests;
 			sourceTree = "<group>";
 		};
+		7BA8784A1FEBAD5F00F03FF3 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				7BA8784B1FEBAD5F00F03FF3 /* GHConsole */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		7BA8784B1FEBAD5F00F03FF3 /* GHConsole */ = {
+			isa = PBXGroup;
+			children = (
+				7BA8784C1FEBAD5F00F03FF3 /* GHConsole.h */,
+				7BA8784D1FEBAD5F00F03FF3 /* GHConsole.m */,
+			);
+			path = GHConsole;
+			sourceTree = "<group>";
+		};
 		7BBE8E751FE78FE800F8D359 /* Founction */ = {
 			isa = PBXGroup;
 			children = (
@@ -184,6 +208,8 @@
 			children = (
 				7BBE8E831FE793B200F8D359 /* OrderUtil.h */,
 				7BA878401FEA00E400F03FF3 /* UtilsMacro.h */,
+				7BA878471FEA5A5E00F03FF3 /* XLOrderHelper.h */,
+				7BA878481FEA5A5E00F03FF3 /* XLOrderHelper.m */,
 			);
 			path = Others;
 			sourceTree = "<group>";
@@ -413,10 +439,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7BA8784E1FEBAD5F00F03FF3 /* GHConsole.m in Sources */,
 				7BBE8E8C1FE7951B00F8D359 /* XLView_OrderFooter.m in Sources */,
 				7B19B0EE1FDBAAF800FFFD4D /* main.m in Sources */,
 				7BBE8E821FE7907600F8D359 /* XLView_OrderItem.m in Sources */,
 				7BBE8E7F1FE7903400F8D359 /* XLModel_BaseOrder.m in Sources */,
+				7BA878491FEA5A5E00F03FF3 /* XLOrderHelper.m in Sources */,
 				7BBE8E7C1FE7901900F8D359 /* XLController_Orderlist.m in Sources */,
 				7BA878431FEA07C300F03FF3 /* XLViewModel_Order.m in Sources */,
 				7B19B0E01FDBAAF800FFFD4D /* AppDelegate.m in Sources */,

@@ -21,6 +21,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self setUpViews];
+    
+    GGLog(@"%@",@"hello world");
     // Do any additional setup after loading the view.
 }
 - (void)setUpViews {

@@ -7,11 +7,15 @@
 //
 
 #import "XLModel_BaseOrder.h"
+#import "XLOrderHelper.h"
 
 @implementation XLModel_BaseOrder
 
 - (XLOrderTypeEnum)orderTypeEnum {
-    return 1;
+    NSString *enName = self.orderType;
+    NSAssert(enName.length > 0, @"enName不能为空");
+    return [self.orderHelper enumValueOfEnName:enName];
+    return -1;
 }
 - (XLOrderStatusEnum)orderStatusEnum {
     return 1;

@@ -12,6 +12,7 @@
 #define WeakSelf     __weak typeof(self) weakSelf = self;
 
 #import "OrderUtil.h"
+#import "GHConsole.h"
 
 CG_INLINE CGRect
 UNEW750_RectMake(CGFloat x, CGFloat y, CGFloat width, CGFloat height){
