@@ -15,6 +15,15 @@
 		7BABF441205901A700212DDB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BABF440205901A700212DDB /* main.m */; };
 		7BABF44B205901A700212DDB /* DXLDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BABF44A205901A700212DDB /* DXLDemoTests.m */; };
 		7BABF456205901A700212DDB /* DXLDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BABF455205901A700212DDB /* DXLDemoUITests.m */; };
+		7BABF47E205903A200212DDB /* XLModel_BaseOrder.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BABF468205903A200212DDB /* XLModel_BaseOrder.m */; };
+		7BABF47F205903A200212DDB /* XLViewModel_Order.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BABF46A205903A200212DDB /* XLViewModel_Order.m */; };
+		7BABF480205903A200212DDB /* XLOrderHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BABF46F205903A200212DDB /* XLOrderHelper.m */; };
+		7BABF481205903A200212DDB /* XLController_Orderlist.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BABF472205903A200212DDB /* XLController_Orderlist.m */; };
+		7BABF482205903A200212DDB /* XLCell_OrderItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BABF475205903A200212DDB /* XLCell_OrderItem.m */; };
+		7BABF483205903A200212DDB /* XLView_OrderContent.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BABF477205903A200212DDB /* XLView_OrderContent.m */; };
+		7BABF484205903A200212DDB /* XLView_OrderFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BABF479205903A200212DDB /* XLView_OrderFooter.m */; };
+		7BABF485205903A200212DDB /* XLView_OrderHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BABF47B205903A200212DDB /* XLView_OrderHeader.m */; };
+		7BABF486205903A200212DDB /* XLView_OrderItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BABF47D205903A200212DDB /* XLView_OrderItem.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +60,26 @@
 		7BABF451205901A700212DDB /* DXLDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DXLDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BABF455205901A700212DDB /* DXLDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DXLDemoUITests.m; sourceTree = "<group>"; };
 		7BABF457205901A700212DDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7BABF467205903A200212DDB /* XLModel_BaseOrder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLModel_BaseOrder.h; sourceTree = "<group>"; };
+		7BABF468205903A200212DDB /* XLModel_BaseOrder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLModel_BaseOrder.m; sourceTree = "<group>"; };
+		7BABF469205903A200212DDB /* XLViewModel_Order.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLViewModel_Order.h; sourceTree = "<group>"; };
+		7BABF46A205903A200212DDB /* XLViewModel_Order.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLViewModel_Order.m; sourceTree = "<group>"; };
+		7BABF46C205903A200212DDB /* OrderUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderUtil.h; sourceTree = "<group>"; };
+		7BABF46D205903A200212DDB /* UtilsMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UtilsMacro.h; sourceTree = "<group>"; };
+		7BABF46E205903A200212DDB /* XLOrderHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLOrderHelper.h; sourceTree = "<group>"; };
+		7BABF46F205903A200212DDB /* XLOrderHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLOrderHelper.m; sourceTree = "<group>"; };
+		7BABF471205903A200212DDB /* XLController_Orderlist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLController_Orderlist.h; sourceTree = "<group>"; };
+		7BABF472205903A200212DDB /* XLController_Orderlist.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLController_Orderlist.m; sourceTree = "<group>"; };
+		7BABF474205903A200212DDB /* XLCell_OrderItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLCell_OrderItem.h; sourceTree = "<group>"; };
+		7BABF475205903A200212DDB /* XLCell_OrderItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLCell_OrderItem.m; sourceTree = "<group>"; };
+		7BABF476205903A200212DDB /* XLView_OrderContent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLView_OrderContent.h; sourceTree = "<group>"; };
+		7BABF477205903A200212DDB /* XLView_OrderContent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLView_OrderContent.m; sourceTree = "<group>"; };
+		7BABF478205903A200212DDB /* XLView_OrderFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLView_OrderFooter.h; sourceTree = "<group>"; };
+		7BABF479205903A200212DDB /* XLView_OrderFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLView_OrderFooter.m; sourceTree = "<group>"; };
+		7BABF47A205903A200212DDB /* XLView_OrderHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLView_OrderHeader.h; sourceTree = "<group>"; };
+		7BABF47B205903A200212DDB /* XLView_OrderHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLView_OrderHeader.m; sourceTree = "<group>"; };
+		7BABF47C205903A200212DDB /* XLView_OrderItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLView_OrderItem.h; sourceTree = "<group>"; };
+		7BABF47D205903A200212DDB /* XLView_OrderItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLView_OrderItem.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +130,7 @@
 		7BABF430205901A700212DDB /* DXLDemo */ = {
 			isa = PBXGroup;
 			children = (
+				7BABF4632059034D00212DDB /* Class */,
 				7BABF431205901A700212DDB /* AppDelegate.h */,
 				7BABF432205901A700212DDB /* AppDelegate.m */,
 				7BABF434205901A700212DDB /* ViewController.h */,
@@ -130,6 +160,81 @@
 				7BABF457205901A700212DDB /* Info.plist */,
 			);
 			path = DXLDemoUITests;
+			sourceTree = "<group>";
+		};
+		7BABF4632059034D00212DDB /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				7BABF4642059034D00212DDB /* OrderList */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		7BABF4642059034D00212DDB /* OrderList */ = {
+			isa = PBXGroup;
+			children = (
+				7BABF465205903A200212DDB /* Founction */,
+			);
+			path = OrderList;
+			sourceTree = "<group>";
+		};
+		7BABF465205903A200212DDB /* Founction */ = {
+			isa = PBXGroup;
+			children = (
+				7BABF466205903A200212DDB /* Models */,
+				7BABF46B205903A200212DDB /* Others */,
+				7BABF470205903A200212DDB /* ViewControolers */,
+				7BABF473205903A200212DDB /* Views */,
+			);
+			path = Founction;
+			sourceTree = "<group>";
+		};
+		7BABF466205903A200212DDB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7BABF467205903A200212DDB /* XLModel_BaseOrder.h */,
+				7BABF468205903A200212DDB /* XLModel_BaseOrder.m */,
+				7BABF469205903A200212DDB /* XLViewModel_Order.h */,
+				7BABF46A205903A200212DDB /* XLViewModel_Order.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		7BABF46B205903A200212DDB /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				7BABF46C205903A200212DDB /* OrderUtil.h */,
+				7BABF46D205903A200212DDB /* UtilsMacro.h */,
+				7BABF46E205903A200212DDB /* XLOrderHelper.h */,
+				7BABF46F205903A200212DDB /* XLOrderHelper.m */,
+			);
+			path = Others;
+			sourceTree = "<group>";
+		};
+		7BABF470205903A200212DDB /* ViewControolers */ = {
+			isa = PBXGroup;
+			children = (
+				7BABF471205903A200212DDB /* XLController_Orderlist.h */,
+				7BABF472205903A200212DDB /* XLController_Orderlist.m */,
+			);
+			path = ViewControolers;
+			sourceTree = "<group>";
+		};
+		7BABF473205903A200212DDB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7BABF474205903A200212DDB /* XLCell_OrderItem.h */,
+				7BABF475205903A200212DDB /* XLCell_OrderItem.m */,
+				7BABF476205903A200212DDB /* XLView_OrderContent.h */,
+				7BABF477205903A200212DDB /* XLView_OrderContent.m */,
+				7BABF478205903A200212DDB /* XLView_OrderFooter.h */,
+				7BABF479205903A200212DDB /* XLView_OrderFooter.m */,
+				7BABF47A205903A200212DDB /* XLView_OrderHeader.h */,
+				7BABF47B205903A200212DDB /* XLView_OrderHeader.m */,
+				7BABF47C205903A200212DDB /* XLView_OrderItem.h */,
+				7BABF47D205903A200212DDB /* XLView_OrderItem.m */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,7 +304,7 @@
 				TargetAttributes = {
 					7BABF42D205901A700212DDB = {
 						CreatedOnToolsVersion = 9.2;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 					7BABF445205901A700212DDB = {
 						CreatedOnToolsVersion = 9.2;
@@ -265,9 +370,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7BABF47F205903A200212DDB /* XLViewModel_Order.m in Sources */,
 				7BABF436205901A700212DDB /* ViewController.m in Sources */,
+				7BABF486205903A200212DDB /* XLView_OrderItem.m in Sources */,
+				7BABF47E205903A200212DDB /* XLModel_BaseOrder.m in Sources */,
+				7BABF482205903A200212DDB /* XLCell_OrderItem.m in Sources */,
+				7BABF484205903A200212DDB /* XLView_OrderFooter.m in Sources */,
 				7BABF441205901A700212DDB /* main.m in Sources */,
+				7BABF481205903A200212DDB /* XLController_Orderlist.m in Sources */,
+				7BABF483205903A200212DDB /* XLView_OrderContent.m in Sources */,
+				7BABF480205903A200212DDB /* XLOrderHelper.m in Sources */,
 				7BABF433205901A700212DDB /* AppDelegate.m in Sources */,
+				7BABF485205903A200212DDB /* XLView_OrderHeader.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -430,11 +544,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = DXLDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dxl.DXLDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -443,11 +559,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = DXLDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dxl.DXLDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
