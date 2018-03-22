@@ -7,11 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7B6FDB272063863C001ACBF8 /* XLTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B6FDB262063863C001ACBF8 /* XLTableViewController.m */; };
+		7B6FDB302063874C001ACBF8 /* XLBaseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B6FDB2F2063874C001ACBF8 /* XLBaseCell.m */; };
+		7B6FDB3320638767001ACBF8 /* Model.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B6FDB3220638767001ACBF8 /* Model.m */; };
+		7B6FDB3620638792001ACBF8 /* XLTitleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B6FDB3520638792001ACBF8 /* XLTitleCell.m */; };
+		7B6FDB392063879F001ACBF8 /* XLImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B6FDB382063879F001ACBF8 /* XLImageCell.m */; };
+		7B6FDB3C20638F12001ACBF8 /* XLTableViewItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B6FDB3B20638F12001ACBF8 /* XLTableViewItem.m */; };
 		7BABF433205901A700212DDB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BABF432205901A700212DDB /* AppDelegate.m */; };
 		7BABF436205901A700212DDB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BABF435205901A700212DDB /* ViewController.m */; };
-		7BABF439205901A700212DDB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BABF437205901A700212DDB /* Main.storyboard */; };
 		7BABF43B205901A700212DDB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7BABF43A205901A700212DDB /* Assets.xcassets */; };
-		7BABF43E205901A700212DDB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BABF43C205901A700212DDB /* LaunchScreen.storyboard */; };
 		7BABF441205901A700212DDB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BABF440205901A700212DDB /* main.m */; };
 		7BABF44B205901A700212DDB /* DXLDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BABF44A205901A700212DDB /* DXLDemoTests.m */; };
 		7BABF456205901A700212DDB /* DXLDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BABF455205901A700212DDB /* DXLDemoUITests.m */; };
@@ -44,14 +48,24 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7B6FDB252063863C001ACBF8 /* XLTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XLTableViewController.h; sourceTree = "<group>"; };
+		7B6FDB262063863C001ACBF8 /* XLTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XLTableViewController.m; sourceTree = "<group>"; };
+		7B6FDB2E2063874C001ACBF8 /* XLBaseCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XLBaseCell.h; sourceTree = "<group>"; };
+		7B6FDB2F2063874C001ACBF8 /* XLBaseCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XLBaseCell.m; sourceTree = "<group>"; };
+		7B6FDB3120638767001ACBF8 /* Model.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Model.h; sourceTree = "<group>"; };
+		7B6FDB3220638767001ACBF8 /* Model.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Model.m; sourceTree = "<group>"; };
+		7B6FDB3420638792001ACBF8 /* XLTitleCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XLTitleCell.h; sourceTree = "<group>"; };
+		7B6FDB3520638792001ACBF8 /* XLTitleCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XLTitleCell.m; sourceTree = "<group>"; };
+		7B6FDB372063879F001ACBF8 /* XLImageCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XLImageCell.h; sourceTree = "<group>"; };
+		7B6FDB382063879F001ACBF8 /* XLImageCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XLImageCell.m; sourceTree = "<group>"; };
+		7B6FDB3A20638F12001ACBF8 /* XLTableViewItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XLTableViewItem.h; sourceTree = "<group>"; };
+		7B6FDB3B20638F12001ACBF8 /* XLTableViewItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XLTableViewItem.m; sourceTree = "<group>"; };
 		7BABF42E205901A700212DDB /* DXLDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DXLDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BABF431205901A700212DDB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		7BABF432205901A700212DDB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		7BABF434205901A700212DDB /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		7BABF435205901A700212DDB /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		7BABF438205901A700212DDB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7BABF43A205901A700212DDB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		7BABF43D205901A700212DDB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7BABF43F205901A700212DDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7BABF440205901A700212DDB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7BABF446205901A700212DDB /* DXLDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DXLDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -107,6 +121,57 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7B6FDB1F20638621001ACBF8 /* XLTable */ = {
+			isa = PBXGroup;
+			children = (
+				7B6FDB2020638621001ACBF8 /* Models */,
+				7B6FDB2120638621001ACBF8 /* Others */,
+				7B6FDB2220638621001ACBF8 /* ViewController */,
+				7B6FDB2420638621001ACBF8 /* Views */,
+			);
+			path = XLTable;
+			sourceTree = "<group>";
+		};
+		7B6FDB2020638621001ACBF8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7B6FDB3120638767001ACBF8 /* Model.h */,
+				7B6FDB3220638767001ACBF8 /* Model.m */,
+				7B6FDB3A20638F12001ACBF8 /* XLTableViewItem.h */,
+				7B6FDB3B20638F12001ACBF8 /* XLTableViewItem.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		7B6FDB2120638621001ACBF8 /* Others */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Others;
+			sourceTree = "<group>";
+		};
+		7B6FDB2220638621001ACBF8 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				7B6FDB252063863C001ACBF8 /* XLTableViewController.h */,
+				7B6FDB262063863C001ACBF8 /* XLTableViewController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		7B6FDB2420638621001ACBF8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7B6FDB2E2063874C001ACBF8 /* XLBaseCell.h */,
+				7B6FDB2F2063874C001ACBF8 /* XLBaseCell.m */,
+				7B6FDB3420638792001ACBF8 /* XLTitleCell.h */,
+				7B6FDB3520638792001ACBF8 /* XLTitleCell.m */,
+				7B6FDB372063879F001ACBF8 /* XLImageCell.h */,
+				7B6FDB382063879F001ACBF8 /* XLImageCell.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		7BABF425205901A700212DDB = {
 			isa = PBXGroup;
 			children = (
@@ -135,9 +200,7 @@
 				7BABF432205901A700212DDB /* AppDelegate.m */,
 				7BABF434205901A700212DDB /* ViewController.h */,
 				7BABF435205901A700212DDB /* ViewController.m */,
-				7BABF437205901A700212DDB /* Main.storyboard */,
 				7BABF43A205901A700212DDB /* Assets.xcassets */,
-				7BABF43C205901A700212DDB /* LaunchScreen.storyboard */,
 				7BABF43F205901A700212DDB /* Info.plist */,
 				7BABF440205901A700212DDB /* main.m */,
 			);
@@ -165,6 +228,7 @@
 		7BABF4632059034D00212DDB /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				7B6FDB1F20638621001ACBF8 /* XLTable */,
 				7BABF4642059034D00212DDB /* OrderList */,
 			);
 			path = Class;
@@ -343,9 +407,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7BABF43E205901A700212DDB /* LaunchScreen.storyboard in Resources */,
 				7BABF43B205901A700212DDB /* Assets.xcassets in Resources */,
-				7BABF439205901A700212DDB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -373,15 +435,21 @@
 				7BABF47F205903A200212DDB /* XLViewModel_Order.m in Sources */,
 				7BABF436205901A700212DDB /* ViewController.m in Sources */,
 				7BABF486205903A200212DDB /* XLView_OrderItem.m in Sources */,
+				7B6FDB392063879F001ACBF8 /* XLImageCell.m in Sources */,
+				7B6FDB3320638767001ACBF8 /* Model.m in Sources */,
 				7BABF47E205903A200212DDB /* XLModel_BaseOrder.m in Sources */,
 				7BABF482205903A200212DDB /* XLCell_OrderItem.m in Sources */,
+				7B6FDB302063874C001ACBF8 /* XLBaseCell.m in Sources */,
 				7BABF484205903A200212DDB /* XLView_OrderFooter.m in Sources */,
 				7BABF441205901A700212DDB /* main.m in Sources */,
 				7BABF481205903A200212DDB /* XLController_Orderlist.m in Sources */,
+				7B6FDB3C20638F12001ACBF8 /* XLTableViewItem.m in Sources */,
 				7BABF483205903A200212DDB /* XLView_OrderContent.m in Sources */,
 				7BABF480205903A200212DDB /* XLOrderHelper.m in Sources */,
 				7BABF433205901A700212DDB /* AppDelegate.m in Sources */,
 				7BABF485205903A200212DDB /* XLView_OrderHeader.m in Sources */,
+				7B6FDB3620638792001ACBF8 /* XLTitleCell.m in Sources */,
+				7B6FDB272063863C001ACBF8 /* XLTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -415,25 +483,6 @@
 			targetProxy = 7BABF452205901A700212DDB /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		7BABF437205901A700212DDB /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7BABF438205901A700212DDB /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		7BABF43C205901A700212DDB /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7BABF43D205901A700212DDB /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		7BABF458205901A700212DDB /* Debug */ = {
@@ -551,7 +600,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.dxl.DXLDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -566,7 +615,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.dxl.DXLDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
