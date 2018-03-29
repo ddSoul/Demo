@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "ViewController.h"
 #import "XLHTTPProtocol.h"
 
 @interface AppDelegate ()
@@ -20,6 +21,12 @@
     // Override point for customization after application launch.
     //注册
     [NSURLProtocol registerClass: [XLHTTPProtocol class]];
+    
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    self.window.backgroundColor = [UIColor whiteColor];
+    [self.window makeKeyAndVisible];
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:[ViewController new]];
+    self.window.rootViewController = nav;
     
     return YES;
 }

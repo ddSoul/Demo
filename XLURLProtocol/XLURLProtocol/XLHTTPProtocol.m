@@ -53,8 +53,11 @@ static NSString * const RichURLProtocolHandledKey = @"RichURLProtocolHandledKey"
  * 这个方法作用很大，把当前请求的request拦截下来以后，在这个方法里面对这个request做各种处理，比如添加请求头，重定向网络，使用自定义的缓存等。作用非常之大。下面就是一个重定向的例子。
  */
 - (void)startLoading {
+    
+    NSString *url = [[NSUserDefaults standardUserDefaults] valueForKey:@"url"];
+   
     NSMutableURLRequest *mutableReqeust = [[self request] mutableCopy];
-    mutableReqeust.URL = [NSURL URLWithString:@"https://www.baidu.com"];
+    mutableReqeust.URL = [NSURL URLWithString:url];
     //打标签，防止无限循环
     [NSURLProtocol setProperty:@YES forKey:RichURLProtocolHandledKey inRequest:mutableReqeust];
     

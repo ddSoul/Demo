@@ -9,13 +9,12 @@
 /* Begin PBXBuildFile section */
 		7B6FDB8A2068D526001ACBF8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B6FDB892068D526001ACBF8 /* AppDelegate.m */; };
 		7B6FDB8D2068D526001ACBF8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B6FDB8C2068D526001ACBF8 /* ViewController.m */; };
-		7B6FDB902068D526001ACBF8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B6FDB8E2068D526001ACBF8 /* Main.storyboard */; };
 		7B6FDB922068D526001ACBF8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B6FDB912068D526001ACBF8 /* Assets.xcassets */; };
-		7B6FDB952068D526001ACBF8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B6FDB932068D526001ACBF8 /* LaunchScreen.storyboard */; };
 		7B6FDB982068D526001ACBF8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B6FDB972068D526001ACBF8 /* main.m */; };
 		7B6FDBA22068D526001ACBF8 /* XLURLProtocolTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B6FDBA12068D526001ACBF8 /* XLURLProtocolTests.m */; };
 		7B6FDBAD2068D526001ACBF8 /* XLURLProtocolUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B6FDBAC2068D526001ACBF8 /* XLURLProtocolUITests.m */; };
 		7B6FDBBC2068D58C001ACBF8 /* XLHTTPProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B6FDBBB2068D58C001ACBF8 /* XLHTTPProtocol.m */; };
+		7B6FDC2A206B3DD0001ACBF8 /* XLNetWorkTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B6FDC29206B3DD0001ACBF8 /* XLNetWorkTool.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,9 +40,7 @@
 		7B6FDB892068D526001ACBF8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		7B6FDB8B2068D526001ACBF8 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		7B6FDB8C2068D526001ACBF8 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		7B6FDB8F2068D526001ACBF8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7B6FDB912068D526001ACBF8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		7B6FDB942068D526001ACBF8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7B6FDB962068D526001ACBF8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7B6FDB972068D526001ACBF8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7B6FDB9D2068D526001ACBF8 /* XLURLProtocolTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XLURLProtocolTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -54,6 +51,8 @@
 		7B6FDBAE2068D526001ACBF8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7B6FDBBA2068D58C001ACBF8 /* XLHTTPProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XLHTTPProtocol.h; sourceTree = "<group>"; };
 		7B6FDBBB2068D58C001ACBF8 /* XLHTTPProtocol.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XLHTTPProtocol.m; sourceTree = "<group>"; };
+		7B6FDC28206B3DD0001ACBF8 /* XLNetWorkTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XLNetWorkTool.h; sourceTree = "<group>"; };
+		7B6FDC29206B3DD0001ACBF8 /* XLNetWorkTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XLNetWorkTool.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,13 +107,13 @@
 				7B6FDB892068D526001ACBF8 /* AppDelegate.m */,
 				7B6FDB8B2068D526001ACBF8 /* ViewController.h */,
 				7B6FDB8C2068D526001ACBF8 /* ViewController.m */,
-				7B6FDB8E2068D526001ACBF8 /* Main.storyboard */,
 				7B6FDB912068D526001ACBF8 /* Assets.xcassets */,
-				7B6FDB932068D526001ACBF8 /* LaunchScreen.storyboard */,
 				7B6FDB962068D526001ACBF8 /* Info.plist */,
 				7B6FDB972068D526001ACBF8 /* main.m */,
 				7B6FDBBA2068D58C001ACBF8 /* XLHTTPProtocol.h */,
 				7B6FDBBB2068D58C001ACBF8 /* XLHTTPProtocol.m */,
+				7B6FDC28206B3DD0001ACBF8 /* XLNetWorkTool.h */,
+				7B6FDC29206B3DD0001ACBF8 /* XLNetWorkTool.m */,
 			);
 			path = XLURLProtocol;
 			sourceTree = "<group>";
@@ -243,9 +242,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7B6FDB952068D526001ACBF8 /* LaunchScreen.storyboard in Resources */,
 				7B6FDB922068D526001ACBF8 /* Assets.xcassets in Resources */,
-				7B6FDB902068D526001ACBF8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,6 +271,7 @@
 				7B6FDBBC2068D58C001ACBF8 /* XLHTTPProtocol.m in Sources */,
 				7B6FDB982068D526001ACBF8 /* main.m in Sources */,
 				7B6FDB8A2068D526001ACBF8 /* AppDelegate.m in Sources */,
+				7B6FDC2A206B3DD0001ACBF8 /* XLNetWorkTool.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,25 +305,6 @@
 			targetProxy = 7B6FDBA92068D526001ACBF8 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		7B6FDB8E2068D526001ACBF8 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7B6FDB8F2068D526001ACBF8 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		7B6FDB932068D526001ACBF8 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7B6FDB942068D526001ACBF8 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		7B6FDBAF2068D526001ACBF8 /* Debug */ = {
