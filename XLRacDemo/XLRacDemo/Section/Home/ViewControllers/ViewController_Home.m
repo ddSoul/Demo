@@ -9,7 +9,10 @@
 #import "ViewController_Home.h"
 #import "ViewModel.h"
 #import "Movice.h"
+
+#import "Cell_BaseItem.h"
 #import "Cell_MoviceItem.h"
+#import "Cell_TitlesItem.h"
 
 @interface ViewController_Home ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -63,9 +66,11 @@
     return self.items.count;
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    Cell_MoviceItem *cell = [tableView dequeueReusableCellWithIdentifier:[Cell_MoviceItem cellReuseIdentifier] forIndexPath:indexPath];
-    cell.model = self.items[indexPath.row];
-    return cell;
+    
+    ViewModel *viewModel = self.items[indexPath.row];
+    Cell_BaseItem *cellItem = [tableView dequeueReusableCellWithIdentifier:viewModel.cellReuseIdentifier forIndexPath:indexPath];
+    cellItem.model = self.items[indexPath.row];
+    return cellItem;
 }
 
 #pragma mark - setter、getter
@@ -76,8 +81,9 @@
         _listView.delegate = self;
         _listView.dataSource = self;
         _listView.estimatedRowHeight = 100;
-        
-        [_listView registerClass:[Cell_MoviceItem class] forCellReuseIdentifier:[Cell_MoviceItem cellReuseIdentifier]];
+        /** 注册Cell */
+        [_listView registerClass:[Cell_MoviceItem class] forCellReuseIdentifier:kImageCellReuseIdentifier];
+        [_listView registerClass:[Cell_TitlesItem class] forCellReuseIdentifier:kTitleCellReuseIdentifier];
     }
     return _listView;
 }

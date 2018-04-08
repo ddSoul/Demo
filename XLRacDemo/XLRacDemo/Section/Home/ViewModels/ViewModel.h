@@ -16,6 +16,9 @@ typedef void (^LoadRequestResult)(NSArray <Movice *>*viewModels);
 
 @property (nonatomic, copy) NSString *alt;
 @property (nonatomic, copy) NSString *sAvatar;
+@property (nonatomic, copy) NSString *cellType;
+@property (nonatomic, copy) NSString *cellReuseIdentifier;
+
 
 /**
  * command处理实际事务  网络请求

@@ -45,6 +45,9 @@
 
 @property (nonatomic, strong) Images *images;
 
+@property (nonatomic, copy) NSString *type;
+
+
 
 @end
 
