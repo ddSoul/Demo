@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "XLTableViewController.h"
+#import "ViewController.h"
 
 @interface AppDelegate ()
 
@@ -20,7 +21,7 @@
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
-    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:[XLTableViewController new]];
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:[ViewController new]];
     self.window.rootViewController = nav;
     // Override point for customization after application launch.
     return YES;
