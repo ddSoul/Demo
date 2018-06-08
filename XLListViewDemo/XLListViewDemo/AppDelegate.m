@@ -8,6 +8,10 @@
 
 #import "AppDelegate.h"
 #import "ViewController_Home.h"
+#import "ViewController.h"
+#import "VolvoNewCardApplyList.h"
+#import "XLFormVC.h"
+#import "XLDrawerViewController.h"
 
 @interface AppDelegate ()
 
@@ -17,12 +21,16 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    
+
     // Override point for customization after application launch.
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     
-    self.window.rootViewController = [[ViewController_Home alloc] init];
+    
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:[VolvoNewCardApplyList new]];
+    self.window.rootViewController = nav;
     return YES;
 }
 

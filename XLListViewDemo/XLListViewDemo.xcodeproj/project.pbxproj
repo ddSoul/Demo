@@ -6,7 +6,31 @@
 	objectVersion = 50;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		7BE87FA220873065003A8A2A /* IPAScript */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 7BE87FA520873065003A8A2A /* Build configuration list for PBXAggregateTarget "IPAScript" */;
+			buildPhases = (
+				7BE87FA620873095003A8A2A /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = IPAScript;
+			productName = IPAScript;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
+		7B2A8BB92091F6AE005FC763 /* UIView+Size.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B2A8BB72091F6AE005FC763 /* UIView+Size.m */; };
+		7B2A8BBC2091F8B9005FC763 /* HeightCacheTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B2A8BBB2091F8B9005FC763 /* HeightCacheTool.m */; };
+		7B2A8BC320920325005FC763 /* VolvoTitleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B2A8BBE20920325005FC763 /* VolvoTitleCell.m */; };
+		7B2A8BC420920325005FC763 /* VolvoNewCardApplyList.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B2A8BBF20920325005FC763 /* VolvoNewCardApplyList.m */; };
+		7B2A8BC520920325005FC763 /* VolvoProfessionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B2A8BC020920325005FC763 /* VolvoProfessionCell.m */; };
+		7B2A8BDE20A2DE64005FC763 /* XLFormVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B2A8BDD20A2DE64005FC763 /* XLFormVC.m */; };
+		7B2A8BE220A2DF0E005FC763 /* FormTCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B2A8BE020A2DF0E005FC763 /* FormTCell.m */; };
+		7B2A8BE320A2DF0E005FC763 /* FormTCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7B2A8BE120A2DF0E005FC763 /* FormTCell.xib */; };
+		7B2C5CEB20B2B7D90078118B /* XLDrawerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B2C5CEA20B2B7D90078118B /* XLDrawerViewController.m */; };
+		7B2C5CEE20B2B7EF0078118B /* PerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B2C5CED20B2B7EF0078118B /* PerViewController.m */; };
 		7BAB5D3C208088480078EABE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BAB5D3B208088480078EABE /* AppDelegate.m */; };
 		7BAB5D3F208088480078EABE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BAB5D3E208088480078EABE /* ViewController.m */; };
 		7BAB5D442080884C0078EABE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7BAB5D432080884C0078EABE /* Assets.xcassets */; };
@@ -46,6 +70,25 @@
 
 /* Begin PBXFileReference section */
 		511B0972994F6B6766E6CDD1 /* Pods-XLListViewDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XLListViewDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XLListViewDemo/Pods-XLListViewDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		7B2A8BB72091F6AE005FC763 /* UIView+Size.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Size.m"; sourceTree = "<group>"; };
+		7B2A8BB82091F6AE005FC763 /* UIView+Size.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Size.h"; sourceTree = "<group>"; };
+		7B2A8BBA2091F8B9005FC763 /* HeightCacheTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HeightCacheTool.h; sourceTree = "<group>"; };
+		7B2A8BBB2091F8B9005FC763 /* HeightCacheTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HeightCacheTool.m; sourceTree = "<group>"; };
+		7B2A8BBD20920324005FC763 /* VolvoNewCardApplyList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VolvoNewCardApplyList.h; sourceTree = "<group>"; };
+		7B2A8BBE20920325005FC763 /* VolvoTitleCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VolvoTitleCell.m; sourceTree = "<group>"; };
+		7B2A8BBF20920325005FC763 /* VolvoNewCardApplyList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VolvoNewCardApplyList.m; sourceTree = "<group>"; };
+		7B2A8BC020920325005FC763 /* VolvoProfessionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VolvoProfessionCell.m; sourceTree = "<group>"; };
+		7B2A8BC120920325005FC763 /* VolvoTitleCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VolvoTitleCell.h; sourceTree = "<group>"; };
+		7B2A8BC220920325005FC763 /* VolvoProfessionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VolvoProfessionCell.h; sourceTree = "<group>"; };
+		7B2A8BDC20A2DE64005FC763 /* XLFormVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XLFormVC.h; sourceTree = "<group>"; };
+		7B2A8BDD20A2DE64005FC763 /* XLFormVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XLFormVC.m; sourceTree = "<group>"; };
+		7B2A8BDF20A2DF0E005FC763 /* FormTCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FormTCell.h; sourceTree = "<group>"; };
+		7B2A8BE020A2DF0E005FC763 /* FormTCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FormTCell.m; sourceTree = "<group>"; };
+		7B2A8BE120A2DF0E005FC763 /* FormTCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FormTCell.xib; sourceTree = "<group>"; };
+		7B2C5CE920B2B7D90078118B /* XLDrawerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XLDrawerViewController.h; sourceTree = "<group>"; };
+		7B2C5CEA20B2B7D90078118B /* XLDrawerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XLDrawerViewController.m; sourceTree = "<group>"; };
+		7B2C5CEC20B2B7EF0078118B /* PerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PerViewController.h; sourceTree = "<group>"; };
+		7B2C5CED20B2B7EF0078118B /* PerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PerViewController.m; sourceTree = "<group>"; };
 		7BAB5D37208088480078EABE /* XLListViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XLListViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BAB5D3A208088480078EABE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		7BAB5D3B208088480078EABE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -121,6 +164,17 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		7B2C5CE820B2B78E0078118B /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				7B2C5CE920B2B7D90078118B /* XLDrawerViewController.h */,
+				7B2C5CEA20B2B7D90078118B /* XLDrawerViewController.m */,
+				7B2C5CEC20B2B7EF0078118B /* PerViewController.h */,
+				7B2C5CED20B2B7EF0078118B /* PerViewController.m */,
+			);
+			path = Others;
+			sourceTree = "<group>";
+		};
 		7BAB5D2E208088480078EABE = {
 			isa = PBXGroup;
 			children = (
@@ -190,6 +244,7 @@
 		7BAB5D6E208088940078EABE /* Section */ = {
 			isa = PBXGroup;
 			children = (
+				7B2C5CE820B2B78E0078118B /* Others */,
 				7BAB5D6F208088940078EABE /* Home */,
 			);
 			path = Section;
@@ -261,7 +316,22 @@
 		7BAB5D8920808C950078EABE /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				7B2A8BBD20920324005FC763 /* VolvoNewCardApplyList.h */,
+				7B2A8BBF20920325005FC763 /* VolvoNewCardApplyList.m */,
+				7B2A8BC220920325005FC763 /* VolvoProfessionCell.h */,
+				7B2A8BC020920325005FC763 /* VolvoProfessionCell.m */,
+				7B2A8BC120920325005FC763 /* VolvoTitleCell.h */,
+				7B2A8BBE20920325005FC763 /* VolvoTitleCell.m */,
+				7B2A8BB82091F6AE005FC763 /* UIView+Size.h */,
+				7B2A8BB72091F6AE005FC763 /* UIView+Size.m */,
 				7BAB5D8A20808C950078EABE /* XLCycleCollectionView */,
+				7B2A8BBA2091F8B9005FC763 /* HeightCacheTool.h */,
+				7B2A8BBB2091F8B9005FC763 /* HeightCacheTool.m */,
+				7B2A8BDC20A2DE64005FC763 /* XLFormVC.h */,
+				7B2A8BDD20A2DE64005FC763 /* XLFormVC.m */,
+				7B2A8BDF20A2DF0E005FC763 /* FormTCell.h */,
+				7B2A8BE020A2DF0E005FC763 /* FormTCell.m */,
+				7B2A8BE120A2DF0E005FC763 /* FormTCell.xib */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -364,6 +434,9 @@
 						CreatedOnToolsVersion = 9.3;
 						TestTargetID = 7BAB5D36208088480078EABE;
 					};
+					7BE87FA220873065003A8A2A = {
+						CreatedOnToolsVersion = 9.3;
+					};
 				};
 			};
 			buildConfigurationList = 7BAB5D32208088480078EABE /* Build configuration list for PBXProject "XLListViewDemo" */;
@@ -382,6 +455,7 @@
 				7BAB5D36208088480078EABE /* XLListViewDemo */,
 				7BAB5D4E2080884C0078EABE /* XLListViewDemoTests */,
 				7BAB5D592080884C0078EABE /* XLListViewDemoUITests */,
+				7BE87FA220873065003A8A2A /* IPAScript */,
 			);
 		};
 /* End PBXProject section */
@@ -392,6 +466,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7BAB5D442080884C0078EABE /* Assets.xcassets in Resources */,
+				7B2A8BE320A2DF0E005FC763 /* FormTCell.xib in Resources */,
 				7BAB5D82208088950078EABE /* db.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -413,6 +488,19 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		7BE87FA620873095003A8A2A /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#构建 .xcarchive文件\nxcodebuild archive -workspace XLListViewDemo.xcworkspace -scheme XLListViewDemo -configuration Release -archivePath XLListViewDemo.xcarchive\n\n#通过 .xcarchive文件导出.ipa包\nxcodebuild -exportArchive -archivePath XLListViewDemo.xcarchive -exportPath XLListViewDemo.ipa -exportOptionsPlist ExportOptions.plist\n\n";
+		};
 		D6C2780556E6A508058A6039 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -421,10 +509,12 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-XLListViewDemo/Pods-XLListViewDemo-resources.sh",
 				"${PODS_ROOT}/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle",
+				"${PODS_ROOT}/XLForm/XLForm/XLForm.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SVProgressHUD.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/XLForm.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -473,16 +563,25 @@
 			files = (
 				7BAB5D9320808CBB0078EABE /* Cell_BannerItem.m in Sources */,
 				7BAB5D8F20808C960078EABE /* XLCycleCell.m in Sources */,
+				7B2C5CEB20B2B7D90078118B /* XLDrawerViewController.m in Sources */,
 				7BAB5D9020808C960078EABE /* XLCycleCollectionView.m in Sources */,
+				7B2A8BC320920325005FC763 /* VolvoTitleCell.m in Sources */,
 				7BAB5D3F208088480078EABE /* ViewController.m in Sources */,
 				7BAB5D88208088950078EABE /* Cell_MoviceItem.m in Sources */,
+				7B2A8BDE20A2DE64005FC763 /* XLFormVC.m in Sources */,
+				7B2A8BB92091F6AE005FC763 /* UIView+Size.m in Sources */,
+				7B2A8BBC2091F8B9005FC763 /* HeightCacheTool.m in Sources */,
 				7BAB5D96208090970078EABE /* CellConfigeItem.m in Sources */,
 				7BAB5D85208088950078EABE /* ViewController_Home.m in Sources */,
 				7BAB5D4A2080884C0078EABE /* main.m in Sources */,
+				7B2A8BC420920325005FC763 /* VolvoNewCardApplyList.m in Sources */,
 				7BAB5D86208088950078EABE /* Cell_BaseItem.m in Sources */,
 				7BAB5D83208088950078EABE /* ViewModel.m in Sources */,
+				7B2C5CEE20B2B7EF0078118B /* PerViewController.m in Sources */,
 				7BAB5D84208088950078EABE /* Movice.m in Sources */,
 				7BAB5D3C208088480078EABE /* AppDelegate.m in Sources */,
+				7B2A8BC520920325005FC763 /* VolvoProfessionCell.m in Sources */,
+				7B2A8BE220A2DF0E005FC763 /* FormTCell.m in Sources */,
 				7BAB5D87208088950078EABE /* Cell_TitlesItem.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -634,10 +733,16 @@
 			baseConfigurationReference = 511B0972994F6B6766E6CDD1 /* Pods-XLListViewDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3T7PG2G445;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/XLListViewDemo/Tool",
+				);
 				GCC_PREFIX_HEADER = /Users/dengxiliang/Desktop/Demo/XLListViewDemo/XLListViewDemo/Macro/PrefixHeader.pch;
 				INFOPLIST_FILE = XLListViewDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -654,10 +759,16 @@
 			baseConfigurationReference = E351B3666018F863590E5061 /* Pods-XLListViewDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3T7PG2G445;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/XLListViewDemo/Tool",
+				);
 				GCC_PREFIX_HEADER = /Users/dengxiliang/Desktop/Demo/XLListViewDemo/XLListViewDemo/Macro/PrefixHeader.pch;
 				INFOPLIST_FILE = XLListViewDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -739,6 +850,22 @@
 			};
 			name = Release;
 		};
+		7BE87FA320873065003A8A2A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		7BE87FA420873065003A8A2A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -774,6 +901,15 @@
 			buildConfigurations = (
 				7BAB5D6A2080884C0078EABE /* Debug */,
 				7BAB5D6B2080884C0078EABE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7BE87FA520873065003A8A2A /* Build configuration list for PBXAggregateTarget "IPAScript" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7BE87FA320873065003A8A2A /* Debug */,
+				7BE87FA420873065003A8A2A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
