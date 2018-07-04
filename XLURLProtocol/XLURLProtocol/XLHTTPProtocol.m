@@ -55,7 +55,7 @@ static NSString * const RichURLProtocolHandledKey = @"RichURLProtocolHandledKey"
 - (void)startLoading {
     
     NSString *url = [[NSUserDefaults standardUserDefaults] valueForKey:@"url"];
-   
+
     NSMutableURLRequest *mutableReqeust = [[self request] mutableCopy];
     mutableReqeust.URL = [NSURL URLWithString:url];
     //打标签，防止无限循环

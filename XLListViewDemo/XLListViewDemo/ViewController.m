@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "VolvoProfessionCell.h"
 #import "HeightCacheTool.h"
+//#include "a/b/Model.h"
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -24,6 +25,7 @@
     [super viewDidLoad];
 //    [self initStyle];
 //    [self loadData];
+//    Model *model = [Model new];
     
     
     UIImageView *imageView = [[UIImageView alloc] init];

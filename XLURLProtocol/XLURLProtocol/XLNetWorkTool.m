@@ -52,53 +52,86 @@ static XLNetWorkTool *_instance;
 - (void)showUrls:(NSArray *)urls {
     self.urls = urls;
     
+    UIPanGestureRecognizer *panGR = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(panGR:)];
+    [self.button addGestureRecognizer:panGR];
+    
     [[UIApplication sharedApplication].keyWindow addSubview:self.button];
 }
 
 #pragma mark - pravite Metheds
+- (void)panGR: (UIPanGestureRecognizer *)rec{
+    
+    CGPoint point = [rec translationInView:[UIApplication sharedApplication].keyWindow];
+    NSLog(@"%f,%f",point.x,point.y);
+    rec.view.center = CGPointMake(rec.view.center.x + point.x, rec.view.center.y + point.y);
+    [rec setTranslation:CGPointMake(0, 0) inView:[UIApplication sharedApplication].keyWindow];
+
+}
 
 - (void)click {
     
     UIView *tView = [[UIApplication sharedApplication].keyWindow viewWithTag:101];
     if (tView) {
-        [self.button setTitle:@"open" forState:UIControlStateNormal];
-        [tView removeFromSuperview];
+        [self.button setTitle:@"Open" forState:UIControlStateNormal];
+        [UIView animateWithDuration:0.2f animations:^{
+            self.tableView.frame = self.button.frame;
+        } completion:^(BOOL finished) {
+            [tView removeFromSuperview];
+        }];
     }else {
-        [self.button setTitle:@"close" forState:UIControlStateNormal];
         [[UIApplication sharedApplication].keyWindow addSubview:self.tableView];
+        [self.button setTitle:@"Close" forState:UIControlStateNormal];
+        [UIView animateWithDuration:0.2f animations:^{
+            self.tableView.frame = [UIApplication sharedApplication].keyWindow.frame;
+            [self.tableView reloadData];
+        } completion:^(BOOL finished) {
+            [[UIApplication sharedApplication].keyWindow insertSubview:self.button aboveSubview:self.tableView];
+        }];
     }
 }
 
 #pragma mark - delegate
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return 44;
+    return 100;
 }
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return self.urls.count;
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
-    cell.backgroundColor = [UIColor grayColor];
+    
+    cell.backgroundColor = [UIColor whiteColor];
+    cell.textLabel.textColor = [UIColor blackColor];
+    cell.textLabel.font = [UIFont systemFontOfSize:14];
     cell.textLabel.text = self.urls[indexPath.row];
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
+    
+     NSString *selUrl = [[NSUserDefaults standardUserDefaults] valueForKey:@"url"];
+    if (selUrl) {
+        if ([self.urls[indexPath.row] isEqualToString:selUrl]) {
+            cell.backgroundColor = [UIColor orangeColor];
+        }
+    }
+    
     return cell;
 }
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     NSLog(@"_____________url:%@",self.urls[indexPath.row]);
     [[NSUserDefaults standardUserDefaults] setValue:self.urls[indexPath.row] forKey:@"url"];
-    UIView *tView = [[UIApplication sharedApplication].keyWindow viewWithTag:101];
-    [self.button setTitle:@"open" forState:UIControlStateNormal];
-    [tView removeFromSuperview];
+    
+    NSString *alertMessage = [NSString stringWithFormat:@"环境切换至:%@",self.urls[indexPath.row]];
+
+    [self click];
 }
 
 - (UITableView *)tableView {
     if (!_tableView) {
         _tableView = [[UITableView alloc] init];
-        _tableView.frame = CGRectMake(0, 100, 300, 200);
         _tableView.center = [UIApplication sharedApplication].keyWindow.center;
         _tableView.delegate = self;
         _tableView.dataSource = self;
         _tableView.tag = 101;
-        _tableView.backgroundColor = [UIColor grayColor];
+        _tableView.backgroundColor = [UIColor whiteColor];
         [_tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"cell"];
     }
     return _tableView;
@@ -106,16 +139,17 @@ static XLNetWorkTool *_instance;
 - (UIButton *)button {
     if (!_button) {
         _button = [UIButton buttonWithType:UIButtonTypeCustom];
-        _button.frame = CGRectMake(0, 0, 64, 64);
-        _button.alpha = 0.5;
-        _button.backgroundColor = [UIColor orangeColor];
+        _button.frame = CGRectMake(0, 64, 64, 64);
+        _button.backgroundColor = [UIColor blackColor];
+        _button.alpha = 0.8;
         _button.tag = 102;
-        [_button setTitle:@"open" forState:UIControlStateNormal];
+        _button.layer.cornerRadius = 32;
+        [_button setTitle:@"Open" forState:UIControlStateNormal];
         [_button addTarget:self action:@selector(click) forControlEvents:UIControlEventTouchUpInside];
+        
+        self.tableView.frame = _button.frame;
     }
     return _button;
 }
-
-
 
 @end

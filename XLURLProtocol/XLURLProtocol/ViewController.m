@@ -24,7 +24,7 @@
     [super viewDidLoad];
     [self setNavgationBar];
     [self.view addSubview:self.contentLabel];
-    [[XLNetWorkTool shareInstance] showUrls:@[@"https://www.baidu.com",@"https://www.jianshu.com"]];
+    
 
 //    [NSURLProtocol unregisterClass:[XLHTTPProtocol class]];
     
