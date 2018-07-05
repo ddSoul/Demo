@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>笑话列表</title>
+	<script src="js/jquery.js"></script>
+	<!-- <script src="js/index.js"></script> -->
+
+</head>
+<body>
+
+
+<div id="list">
+
+<button type="button" onclick="request()">点击我获取列表</button>
+
+</div>
+
+
+<script type="text/javascript">
+		
+function request() {
+
+    alert("loading");
+    var settings = {
+        type: "GET",
+        url:"http://apis.baidu.com/showapi_open_bus/showapi_joke/joke_text",
+        dataType:"json",
+        error: function(XHR,textStatus,errorThrown) {
+            alert(errorThrown);
+        },
+        success: function(data,textStatus) {
+
+            alert("successful");
+
+            var list = data.showapi_res_body.contentlist;
+            for (x in list)
+             {
+             	var newchild = document.createElement("p");
+				newchild.innerHTML = list[x].text;
+				document.getElementById("list").appendChild(newchild);
+                // document.write(list[x].text + "<br />")
+                // document.getElementById("list").innerHTML += "<p>sss</p>";
+              }
+        },
+        headers: {
+            "apikey":"eb0d7633268c4e4d346bd6cfa57a47e5"
+        }
+    };
+    $.ajax(settings);
+
+}
+	
+
+	</script>
+
+	<style type="text/css">
+		p{
+			width: 100%;
+			background-color: green;
+			/*background-image: url(img/tour1.png);*/
+			/*background-repeat: no-repeat;*/
+		}
+	</style>
+
+</body>
+</html>
